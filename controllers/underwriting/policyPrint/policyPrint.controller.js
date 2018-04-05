@@ -30,7 +30,7 @@ exports.policyPrint = function (req, res, next) {
   jsreport.init().then(function () {
 
     jsreport.documentStore.collection('templates').insert({
-      content: '{{myHelper}}',
+      content: '{{$pdf.pageNumber}}/{{$pdf.pages.length}}',
       shortid: 'header',
       engine: 'handlebars',
       recipe: 'phantom-pdf'
@@ -39,9 +39,8 @@ exports.policyPrint = function (req, res, next) {
 
     return jsreport.render({
       template: {
-        engine: 'handlebars',
         content: fs.readFileSync(path.join(__dirname, 'policyPrint.hbs')).toString(),
-
+        engine: 'handlebars',
         recipe: 'phantom-pdf',
         helpers: helpers,//"var handlerBars = require('handlebars');" +
         // 'function formatDate(_date) {let date = new Date(_date);return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()} ' +
