@@ -1,0 +1,181 @@
+[
+    {
+      "LOB_DESC": "FIRE",
+      "PRODUCT_DESC": "Home Gold",
+      "POLICY_NO": "FI-021331",
+      "END_NO": null,
+      "SUM_INSURED": 103000,
+      "SUM_INSURED_CUR_CODE": "USD  ",
+      "SUM_INSURED_CUR_DESC": "US Dollars",
+      "DATE_EFFECTIVE": "2017-01-27T00:00:00",
+      "DATE_EXPIRY": "2018-01-27T00:00:00",
+      "TOTAL_PREMIUM": 171,
+      "PREMIUM_CUR_CODE": "USD  ",
+      "PREMIUM_CUR_DESC": "US Dollars",
+      "POLICY_END_AT_NOON": "(at noon)",
+      "PRINT_NAME": "Insured - 1111111",
+      "TITLE_DESC": "MR.",
+      "PRINT_ADDRESS": "Test Location 1",
+      "Covers": [
+        {
+          "POLICY_ID": 1,
+          "COVER_DESC": "Construction",
+          "SUM_INSURED": 50000
+        },
+        {
+          "POLICY_ID": 2,
+          "COVER_DESC": "Contents",
+          "SUM_INSURED": 40000
+        },
+        {
+          "POLICY_ID": 3,
+          "COVER_DESC": "Removal of debris and demolition",
+          "SUM_INSURED": 10000
+        },
+        {
+          "POLICY_ID": 4,
+          "COVER_DESC": "Loss of use",
+          "SUM_INSURED": 3000
+        },
+        {
+          "POLICY_ID": 5,
+          "COVER_DESC": "Thunderbolt and/or lightning",
+          "SUM_INSURED": 90000
+        },
+        {
+          "POLICY_ID": 6,
+          "COVER_DESC": "Aircraft damage",
+          "SUM_INSURED": 90000
+        },
+        {
+          "POLICY_ID": 7,
+          "COVER_DESC": "Impact damage",
+          "SUM_INSURED": 90000
+        },
+        {
+          "POLICY_ID": 8,
+          "COVER_DESC": "Explosion",
+          "SUM_INSURED": 90000
+        },
+        {
+          "POLICY_ID": 9,
+          "COVER_DESC": "Water damage",
+          "SUM_INSURED": 90000
+        },
+        {
+          "POLICY_ID": 10,
+          "COVER_DESC": "Earthquake",
+          "SUM_INSURED": 90000
+        },
+        {
+          "POLICY_ID": 11,
+          "COVER_DESC": "Storm, Tempest and Flood",
+          "SUM_INSURED": 90000
+        },
+        {
+          "POLICY_ID": 12,
+          "COVER_DESC": "Burglary - Contents",
+          "SUM_INSURED": 20000
+        }
+      ],
+      "Clauses": [
+        {
+          "POLICY_ID": 1,
+          "CLAUSE_DESC": "Renewal by endorsement - Assuroof",
+          "CLAUSE_CONTENT": "<p style=\"margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;text-indent: 0px;line-height: 1;text-align: left;\"><span style=\"font-family: 'Courier New';font-size: 16px;\"><b><u>RENOUVELLEMENT</u></b></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\"><u>Description du risque </u></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">: Appartement (Superficie: 160 m&egrave;tres carr&eacute;s) situ&eacute; au&nbsp;</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; rez-de-chauss&eacute;e de l'immeuble Georgette Amine&nbsp; Ishak,</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &eacute;lev&eacute; sur le bien-fonds No. 202 ,sis &agrave; c&ocirc;t&eacute; de&quot; Hitti</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for glass&quot;, rue Al Ain, Green area, Adonis, Keserwan,</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Liban.</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">A la demande du Souscripteur et par la pr&eacute;sente Police,la Compagnie renouvelle</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">l'effet&nbsp; de&nbsp; la&nbsp; Police&nbsp; &eacute;chue&nbsp; No.&nbsp; FI-017981&nbsp; cit&eacute;e&nbsp; en&nbsp;&nbsp; marge,&nbsp; aux&nbsp; m&ecirc;mes</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">termes, conditions&nbsp; et&nbsp;&nbsp; sommes&nbsp; assur&eacute;es&nbsp; comme&nbsp; indiqu&eacute;es ci-apr&egrave;s, pour une</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">nouvelle&nbsp; p&eacute;riode&nbsp; d'une&nbsp; ann&eacute;e&nbsp; allant&nbsp; du&nbsp; 27.01.2017 (&agrave; midi) au </span><span style=\"font-family: 'Courier New';font-size: 13.34px;color: #000000;\">27.01.2018</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">(&agrave; midi).</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">Le tout sujet aux sous-limites de la Police.</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">Par cons&eacute;quent, le Souscripteur s'engage &agrave; payer, contre quittance s&eacute;par&eacute;e, la</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">prime mentionn&eacute;e.</span><span style=\"font-family: 'Times New Roman';font-size: 16px;\">&nbsp;</span></p>"
+        },
+        {
+          "POLICY_ID": 2,
+          "CLAUSE_DESC": "SANCTION LIMITATION AND EXCLUSION CLAUSE",
+          "CLAUSE_CONTENT": "<p style=\"margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;text-indent: 0px;line-height: 1;text-align: left;\"><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">SANCTION LIMITATION AND EXCLUSION CLAUSE</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">No&nbsp; (re)insurer&nbsp; shall&nbsp; be deemed to provide cover and no (re)insurer shall be</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">liable&nbsp; to&nbsp; pay&nbsp; any claim or provide any benefit hereunder to the extent that</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">the&nbsp; provision&nbsp; of&nbsp; such&nbsp; cover,&nbsp; payment&nbsp; of&nbsp; such claim or provision of such</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">benefit&nbsp; would&nbsp; expose&nbsp; that&nbsp; (re)insurer&nbsp; to&nbsp; any&nbsp; sanction,&nbsp; prohibition&nbsp; or</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">restriction&nbsp; under&nbsp; United&nbsp; Nations&nbsp; resolutions&nbsp; or&nbsp; the&nbsp; trade&nbsp; or&nbsp; economic</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">sanctions, laws or regulations of the European Union, United Kingdom or United</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">States of America.</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">JC2010/014 </span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">11 August 2010 </span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span></p><p style=\"margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;text-indent: 0px;line-height: 1;text-align: left;\"><span style=\"font-family: 'Verdana';font-size: 16px;\">&nbsp;</span></p>"
+        },
+        {
+          "POLICY_ID": 3,
+          "CLAUSE_DESC": "FIN DE POLICE",
+          "CLAUSE_CONTENT": "<p style=\"margin-top: 6.66px;margin-bottom: 6.66px;line-height: 1.15;\"><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp;</span><span style=\"font-family: 'Courier New';font-size: 13.34px;\"><b> LE SOUSCRIPTEUR&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; POUR LA COMPAGNIE</b></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ASSUREX S.A.L. </b></span></p>"
+        }
+      ]
+    },
+    {
+      "LOB_DESC": "FIRE",
+      "PRODUCT_DESC": "Fire - Housing Loan Broker",
+      "POLICY_NO": "FI-021393",
+      "END_NO": null,
+      "SUM_INSURED": 1339500,
+      "SUM_INSURED_CUR_CODE": "USD  ",
+      "SUM_INSURED_CUR_DESC": "US Dollars",
+      "DATE_EFFECTIVE": "2017-01-15T00:00:00",
+      "DATE_EXPIRY": "2018-01-15T00:00:00",
+      "TOTAL_PREMIUM": 1000,
+      "PREMIUM_CUR_CODE": "USD  ",
+      "PREMIUM_CUR_DESC": "US Dollars",
+      "POLICY_END_AT_NOON": "(at noon)",
+      "PRINT_NAME": "Insured - 2222222",
+      "TITLE_DESC": "MR.",
+      "PRINT_ADDRESS": "Test Location 2",
+      "Covers": [
+        {
+          "POLICY_ID": 1,
+          "COVER_DESC": "Construction",
+          "SUM_INSURED": 893000
+        },
+        {
+          "POLICY_ID": 2,
+          "COVER_DESC": "Neighbours' recourse",
+          "SUM_INSURED": 446500
+        },
+        {
+          "POLICY_ID": 3,
+          "COVER_DESC": "Thunderbolt and/or lightning",
+          "SUM_INSURED": 893000
+        },
+        {
+          "POLICY_ID": 4,
+          "COVER_DESC": "Aircraft damage",
+          "SUM_INSURED": 893000
+        },
+        {
+          "POLICY_ID": 5,
+          "COVER_DESC": "Impact damage",
+          "SUM_INSURED": 893000
+        },
+        {
+          "POLICY_ID": 6,
+          "COVER_DESC": "Explosion",
+          "SUM_INSURED": 893000
+        },
+        {
+          "POLICY_ID": 7,
+          "COVER_DESC": "Earthquake",
+          "SUM_INSURED": 893000
+        },
+        {
+          "POLICY_ID": 8,
+          "COVER_DESC": "Storm, Tempest and Flood",
+          "SUM_INSURED": 893000
+        }
+      ],
+      "Clauses": [
+        {
+          "POLICY_ID": 1,
+          "CLAUSE_DESC": "CREDEX - Renewal Endt ",
+          "CLAUSE_CONTENT": "<p style=\"margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;text-indent: 0px;line-height: 1;text-align: center;\"><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\"><b><u>RENEWAL</u></b></span><span style=\"font-family: 'Courier New';font-size: 12px;\"></span></p><p style=\"margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;text-indent: 0px;line-height: 1;text-align: left;\"><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\"><u>Description of risk</u></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">: Apartment(Part 10 - Block B ;Surface: 235 square meters),</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; situated&nbsp;on the&nbsp;Seventh floor of Building # 4345 ,erected</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style=\"font-family: 'Courier New';font-size: 13.34px;\"> on&nbsp;Plot No.4345, Achrafieh Quarter Sioufi Street, Beirut,</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style=\"font-family: 'Courier New';font-size: 13.34px;\"> Lebanon.</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">At&nbsp; the&nbsp; Insured's&nbsp; request&nbsp; and by&nbsp; the present Policy, the Company agrees to</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">renew&nbsp; the&nbsp; expired&nbsp; Policy&nbsp; No. FI-017932&nbsp; at&nbsp; same&nbsp;&nbsp; terms , conditions&nbsp; and</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">sums&nbsp;insured, for&nbsp; one further year as from 15.01.2017 (at noon) to </span><span style=\"font-family: 'Courier New';font-size: 13.34px;color: #000000;\">15.01.2018</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">(at noon).</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\"><u>Designation of risk</u></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;</span><span style=\"font-family: 'Courier New';font-size: 13.34px;\"><u>Sums&nbsp; insured</u></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">- Construction&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; USD&nbsp; 893,000.-</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">- Neighbours' recourse&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; USD&nbsp;&nbsp;446,500.-</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">Subject to Policy sub-limits if any.</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">- The&nbsp; above&nbsp; construction&nbsp; sum&nbsp; insured&nbsp; includes&nbsp; the Insured's share in the</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp; building common parts (Parts 1 &amp; 3B).</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">Consequently, the&nbsp; Insured&nbsp; agrees&nbsp; to&nbsp; settle to the Company the premium here</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">above indicated.</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">- See&nbsp; attached&nbsp; Annexes: &quot;Beneficiary Clause&quot; and&nbsp; &quot;Sanction&nbsp; Limitation&nbsp; and</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp; Exclusion Clause&quot;.</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span></p>"
+        },
+        {
+          "POLICY_ID": 2,
+          "CLAUSE_DESC": "Beneficiary Clause",
+          "CLAUSE_CONTENT": "<p style=\"margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;text-indent: 0px;line-height: 1;text-align: left;\"><span style=\"font-family: 'Courier New';font-size: 13.34px;\">BENEFICIARY CLAUSE&nbsp;</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">At&nbsp;&nbsp; the&nbsp;&nbsp; Insured's&nbsp;&nbsp; request,&nbsp;&nbsp; the&nbsp; Company&nbsp;&nbsp; irrevocably&nbsp;&nbsp; transfers&nbsp;&nbsp; the&nbsp;</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">benefits&nbsp; granted&nbsp; by&nbsp; the present Policy to:</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">Creditbank S.A.L.&nbsp; </span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">and&nbsp;&nbsp; undertakes&nbsp;&nbsp; not&nbsp;&nbsp; to&nbsp; cancel&nbsp; it&nbsp;&nbsp; without&nbsp; giving&nbsp; the above-mentioned</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">beneficiary&nbsp; prior&nbsp; notice as&nbsp; provided&nbsp; for&nbsp; by&nbsp; the&nbsp; &quot;CODE&nbsp; DES&nbsp; OBLIGATIONS&nbsp;</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">ET&nbsp; DES&nbsp;&nbsp; CONTRATS &quot; nor&nbsp; to&nbsp; alter&nbsp; its&nbsp;&nbsp; conditions&nbsp; unless so requested, in</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">writing, by said beneficiary.</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">Consequently,in&nbsp;case&nbsp; of&nbsp; occurrence&nbsp; of&nbsp; a covered&nbsp; loss,the indemnification&nbsp;</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">shall&nbsp; be&nbsp; directly&nbsp; settled&nbsp; to&nbsp; the &nbsp; aforesaid&nbsp;&nbsp; Bank&nbsp; in&nbsp; its&nbsp; capacity as</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">beneficiary but&nbsp; only to the&nbsp; limits of the portion pertaining to the evidence</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">of debit due by the Insured.</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp;</span></p><p style=\"margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;text-indent: 0px;line-height: 1;text-align: left;\"><span style=\"font-family: 'Courier New';font-size: 13.34px;\">&nbsp;</span></p>"
+        },
+        {
+          "POLICY_ID": 3,
+          "CLAUSE_DESC": "SANCTION LIMITATION AND EXCLUSION CLAUSE",
+          "CLAUSE_CONTENT": "<p style=\"margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;text-indent: 0px;line-height: 1;text-align: left;\"><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">SANCTION LIMITATION AND EXCLUSION CLAUSE</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">No&nbsp; (re)insurer&nbsp; shall&nbsp; be deemed to provide cover and no (re)insurer shall be</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">liable&nbsp; to&nbsp; pay&nbsp; any claim or provide any benefit hereunder to the extent that</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">the&nbsp; provision&nbsp; of&nbsp; such&nbsp; cover,&nbsp; payment&nbsp; of&nbsp; such claim or provision of such</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">benefit&nbsp; would&nbsp; expose&nbsp; that&nbsp; (re)insurer&nbsp; to&nbsp; any&nbsp; sanction,&nbsp; prohibition&nbsp; or</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">restriction&nbsp; under&nbsp; United&nbsp; Nations&nbsp; resolutions&nbsp; or&nbsp; the&nbsp; trade&nbsp; or&nbsp; economic</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">sanctions, laws or regulations of the European Union, United Kingdom or United</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">States of America.</span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">JC2010/014 </span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\">11 August 2010 </span><span style=\"font-family: 'Courier New';font-size: 12px;\"><br /></span></p><p style=\"margin-top: 0px;margin-right: 0px;margin-bottom: 0px;margin-left: 0px;text-indent: 0px;line-height: 1;text-align: left;\"><span style=\"font-family: 'Verdana';font-size: 16px;\">&nbsp;</span></p>"
+        },
+        {
+          "POLICY_ID": 4,
+          "CLAUSE_DESC": "End of Policy",
+          "CLAUSE_CONTENT": "<p style=\"margin-top: 0px;margin-bottom: 12px;line-height: 1.15;\"><span style=\"font-family: 'Courier New';font-size: 13.34px;\"><b>THE INSURED&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FOR THE COMPANY</b></span><span style=\"font-family: 'Verdana';font-size: 16px;\"><br /></span><span style=\"font-family: 'Courier New';font-size: 13.34px;\"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; ASSUREX S.A.L.</b></span></p>"
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,221 @@
+<style>
+    body {
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+
+    table tr td {
+        vertical-align: top;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .page_break {
+        page-break-after: always;
+    }
+</style>
+
+
+{{!-- {{{pdfCreatePagesGroup name="Jan" age=33}}}
+{{mySum}} --}}
+
+
+{{#each this}}
+
+<table class="page_break" width="100%" style="width: 100%; border-collapse: collapse;">
+    <tr>
+        <td align="center" class="bold" style="text-transform: uppercase; font-size: 1.4em;">
+            {{LOB_DESC}} insurtance policy
+        </td>
+    </tr>
+    <tr>
+        <td height="5px"></td>
+    </tr>
+    <tr>
+        <td align="center" class="bold" style="text-transform: capitalize; font-size: 1.2em;">
+            {{PRODUCT_DESC}}
+        </td>
+    </tr>
+    <tr>
+        <td height="20px"></td>
+    </tr>
+    <tr>
+        <td>
+            <table width="100%" style="width: 100%;">
+                <tr>
+                    <td width="60%">
+                        <table width="100%" style="width: 100%;">
+                            <tr>
+                                <td class="bold" width="100px">
+                                    Insured
+                                </td>
+                                <td width="5px">:</td>
+                                <td>
+                                    {{TITLE_DESC}} {{PRINT_NAME}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold">
+                                    Address
+                                </td>
+                                <td>:</td>
+                                <td>
+                                    {{PRINT_ADDRESS}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold">
+                                    Phone(s)
+                                </td>
+                                <td>:</td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold">
+                                    Account
+                                </td>
+                                <td>:</td>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="10%">&nbsp;</td>
+                    <td width="30%">
+                        <table width="100%" style="width: 100%;">
+                            <tr>
+                                <td class="bold" width="100px">
+                                    Policy
+                                </td>
+                                <td width="5px">:</td>
+                                <td>
+                                    {{POLICY_NO}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold">
+                                    Endorsement
+                                </td>
+                                <td>:</td>
+                                <td>
+                                    {{END_NO}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold">
+                                    Sum Insured
+                                </td>
+                                <td>:</td>
+                                <td>
+                                    {{SUM_INSURED}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold">
+                                    Currency
+                                </td>
+                                <td>:</td>
+                                <td>
+                                    {{SUM_INSURED_CUR_DESC}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold">
+                                    Effective Date
+                                </td>
+                                <td>:</td>
+                                <td>
+                                    {{formatDate DATE_EFFECTIVE}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bold">
+                                    Expiry Date
+                                </td>
+                                <td>:</td>
+                                <td>
+                                    {{formatDate DATE_EXPIRY}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="20px"></td>
+    </tr>
+    <tr>
+        <td>
+            <table width="100%" style="width: 100%;border-top: 2px solid black; border-bottom: 2px solid black">
+                <tr>
+                    <td height="5px"></td>
+                </tr>
+                <tr>
+                    <td class="bold">
+                        Total Premium : {{PREMIUM_CUR_DESC}} {{TOTAL_PREMIUM}}
+                    </td>
+                </tr>
+                <tr>
+                    <td height="5px"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="20px"></td>
+    </tr>
+    <tr>
+        <td class="bold" style="text-decoration: underline; font-size:1.2em;">
+            Benefits Granted
+        </td>
+    </tr>
+    <tr>
+        <td height="10px"></td>
+    </tr>
+    <tr>
+        <td>
+            <table width="100%" style="width: 100%;">
+                <tr>
+                    <td width="5px"></td>
+                    <td></td>
+                    <td align="right" style="text-decoration: underline; font-size:1.2em;">
+                        Sum Insured ({{SUM_INSURED_CUR_CODE}})
+                    </td>
+                </tr>
+                {{#each Covers}}
+                <tr>
+                    <td style="vertical-align: middle;">
+                        *
+                    </td>
+                    <td>
+                        {{COVER_DESC}}
+                    </td>
+                    <td align="right">
+                        {{SUM_INSURED}}
+                    </td>
+                </tr>
+                {{/each}}
+            </table>
+        </td>
+    </tr>
+</table>
+<table class="page_break" width="100%" style="width: 100%;">
+   
+    {{#each Clauses}}
+
+    <tr>
+        <td>
+            {{generateHtml CLAUSE_CONTENT}}
+        </td>
+    </tr>
+    {{/each}}
+</table>
+{{/each}}
+
