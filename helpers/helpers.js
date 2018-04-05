@@ -29,5 +29,6 @@ function generateHtml(clause_text) {
 }
 
 function mySum() {
-    return this.$pdf.pages;
+    console.log('this.$pdf.pages ', this.$pdf.pages)
+    return this.$pdf.pages[this.$pdf.pageIndex].items;
   }
