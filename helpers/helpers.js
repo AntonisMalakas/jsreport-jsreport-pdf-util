@@ -32,3 +32,7 @@ function mySum() {
     console.log('this.$pdf.pages ', this.$pdf.pages)
     return this.$pdf.pages[this.$pdf.pageIndex].items;
   }
+
+  function myHelper(){
+    return this.$pdf.pageIndex;
+  }

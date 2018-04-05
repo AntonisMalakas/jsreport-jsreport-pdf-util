@@ -30,7 +30,7 @@ exports.policyPrint = function (req, res, next) {
   jsreport.init().then(function () {
 
     jsreport.documentStore.collection('templates').insert({
-      content: '{{mySum}}',
+      content: '{{myHelper}}',
       shortid: 'header',
       engine: 'handlebars',
       recipe: 'phantom-pdf'
