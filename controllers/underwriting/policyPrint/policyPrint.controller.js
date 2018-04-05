@@ -30,13 +30,16 @@ exports.policyPrint = function (req, res, next) {
       template: {
         engine: 'handlebars',
         content: fs.readFileSync(path.join(__dirname, 'policyPrint.hbs')).toString(),
-        
+
         recipe: 'phantom-pdf',
-        helpers: "var handlerBars = require('handlebars');" +
-                'function formatDate(_date) {let date = new Date(_date);return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()} ' + 
-                'function generateHtml(clause_text) {let htmlToDisplay = new handlerBars.SafeString(clause_text);return htmlToDisplay;}' +
-                'function mySum() {return this.$pdf.pages}'   , // helpers,
-        pdfOperations: [{ type: 'merge', renderForEveryPage: true }]
+        helpers: helpers, //"var handlerBars = require('handlebars');" +
+        //'function formatDate(_date) {let date = new Date(_date);return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()} ' + 
+        //'function generateHtml(clause_text) {let htmlToDisplay = new handlerBars.SafeString(clause_text);return htmlToDisplay;}' +
+        //'function mySum() {return this.$pdf.pages}'   , // helpers,
+        pdfOperations: [{ type: 'merge', renderForEveryPage: true }],
+        phantom: {
+          header: "{{mySum}}"
+        },
       },
 
       data: dataList
