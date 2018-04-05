@@ -37,9 +37,9 @@ exports.policyPrint = function (req, res, next) {
         //'function generateHtml(clause_text) {let htmlToDisplay = new handlerBars.SafeString(clause_text);return htmlToDisplay;}' +
         //'function mySum() {return this.$pdf.pages}'   , // helpers,
         pdfOperations: [{ type: 'merge', renderForEveryPage: true }],
-        phantom: {
-          header: "{{mySum}}"
-        },
+        // phantom: {
+        //   header: "{{mySum}}"
+        // },
       },
 
       data: dataList
