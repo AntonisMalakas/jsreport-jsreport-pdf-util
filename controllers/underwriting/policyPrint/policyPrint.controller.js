@@ -3,13 +3,16 @@ var fs = require('fs');
 var request = require('request');
 
 
+
 var jsreport = require('jsreport-core')(
   {
     "tasks": {
       "allowedModules": ["handlebars"],
-      "strategy": "http-server",
+      // "strategy": "http-server",
+      "strategy": "in-process",
       "numberOfWorkers": 8
     },
+    "scripts": { "allowedModules": "*" },
     "phantom": {
       "strategy": "phantom-server",
       "numberOfWorkers": 8
@@ -24,21 +27,22 @@ jsreport.use(require('jsreport-templates')());
 
 var helpers = fs.readFileSync(path.join(__dirname, '..', '..', '..', 'helpers/helpers.js'), 'utf8');
 
-exports.policyPrint = async (req, res, next) =>{
+exports.policyPrint = async (req, res, next) => {
   var dataList = fs.readFileSync(path.join(__dirname, 'policyData.json')).toString();
 
-  jsreport.init().then( async () => {
+  jsreport.init().then(async () => {
 
     await jsreport.documentStore.collection('templates').insert({
-      content: "<div>Header: {{this.$pdf.pageNumber}} / {{this.$pdf.pages.length}} </div>",
+      content: "{{myHelper}}",
       shortid: 'header',
       engine: 'handlebars',
       recipe: 'chrome-pdf',
+      helpers: helpers,
       chrome: {
         width: '10cm',
         height: '10cm'
       },
-     
+
     })
 
 
