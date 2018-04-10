@@ -7,7 +7,7 @@ var request = require('request');
 var jsreport = require('jsreport-core')(
   {
     "tasks": {
-      "allowedModules": ["handlebars"],
+      "allowedModules": "*",
       // "strategy": "http-server",
       "strategy": "in-process",
       "numberOfWorkers": 8

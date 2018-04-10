@@ -22,9 +22,7 @@
 
 
 
-{{#each data}}
-
-{{{pdfCreatePagesGroup POLICY_NO}}}
+{{#each data}} {{{pdfCreatePagesGroup POLICY_NO}}}
 
 <table class="page_break" width="100%" style="width: 100%; border-collapse: collapse;">
     <tr>
@@ -207,7 +205,7 @@
     </tr>
 </table>
 <table class="page_break" width="100%" style="width: 100%;">
-   
+
     {{#each Clauses}}
 
     <tr>
@@ -217,5 +215,6 @@
     </tr>
     {{/each}}
 </table>
-{{/each}}
 
+{{!-- <div style='page-break-before: always'> </div> --}}
+{{/each}}

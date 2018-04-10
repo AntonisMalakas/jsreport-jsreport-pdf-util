@@ -1,4 +1,5 @@
 var handlerBars = require('handlebars');
+const counter = require('./../controllers/underwriting/policyPrint/counter');
 
 let groupPageCounter = 0;
 
@@ -37,17 +38,24 @@ function myHelper() {
     if (previousPageIndex == -1) {
         if (this.$pdf.pageIndex == 0) {
             this.groupPageCounter = 1;
-            return this.groupPageCounter;
+            counter.setValue(1);
+            return counter.get();
+            //return this.groupPageCounter;
+
         }
     } else if (previousPageIndex > -1) {
 
         if (this.$pdf.pages[this.$pdf.pageIndex].group == this.$pdf.pages[previousPageIndex].group) {
             this.groupPageCounter = this.groupPageCounter + 1;
-            return this.groupPageCounter;
+            // return this.groupPageCounter;
+            counter.increment();
+            return counter.get();
         }
         else {
             this.groupPageCounter = 1;
-            return this.groupPageCounter;
+            counter.setValue(1);
+            return counter.get();
+            // return this.groupPageCounter;
         }
     }
 }
