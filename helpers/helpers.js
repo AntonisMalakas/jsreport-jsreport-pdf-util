@@ -32,7 +32,6 @@ function generateHtml(clause_text) {
 
 
 function myHelper() {
-    // this.groupPageCounter = 0;
     let previousPageIndex = this.$pdf.pageIndex - 1;
 
     if (previousPageIndex == -1) {
@@ -44,8 +43,7 @@ function myHelper() {
 
         if (this.$pdf.pages[this.$pdf.pageIndex].group == this.$pdf.pages[previousPageIndex].group) {
             this.groupPageCounter = this.groupPageCounter + 1;
-            let x = this.groupPageCounter + 1;
-            return x;
+            return this.groupPageCounter;
         }
         else {
             this.groupPageCounter = 1;
