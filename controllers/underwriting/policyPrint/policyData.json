@@ -1,4 +1,5 @@
-[
+{
+  "data": [
     {
       "LOB_DESC": "FIRE",
       "PRODUCT_DESC": "Home Gold",
@@ -179,3 +180,4 @@
       ]
     }
   ]
+}

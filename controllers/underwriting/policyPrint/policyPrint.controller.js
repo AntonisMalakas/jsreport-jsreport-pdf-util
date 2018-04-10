@@ -17,31 +17,36 @@ var jsreport = require('jsreport-core')(
   }
 );
 jsreport.use(require('jsreport-handlebars')());
+jsreport.use(require('jsreport-chrome-pdf')());
 jsreport.use(require('jsreport-phantom-pdf')());
 jsreport.use(require('jsreport-pdf-utils')());
 jsreport.use(require('jsreport-templates')());
-// jsreport.use(require('jsreport-chrome-pdf')());
 
 var helpers = fs.readFileSync(path.join(__dirname, '..', '..', '..', 'helpers/helpers.js'), 'utf8');
 
-exports.policyPrint = function (req, res, next) {
+exports.policyPrint = async (req, res, next) =>{
   var dataList = fs.readFileSync(path.join(__dirname, 'policyData.json')).toString();
 
-  jsreport.init().then(function () {
+  jsreport.init().then( async () => {
 
-    jsreport.documentStore.collection('templates').insert({
-      content: '{{$pdf.pageNumber}}/{{$pdf.pages.length}}',
+    await jsreport.documentStore.collection('templates').insert({
+      content: "<div>Header: {{this.$pdf.pageNumber}} / {{this.$pdf.pages.length}} </div>",
       shortid: 'header',
       engine: 'handlebars',
-      recipe: 'phantom-pdf'
+      recipe: 'chrome-pdf',
+      chrome: {
+        width: '10cm',
+        height: '10cm'
+      },
+     
     })
 
 
-    return jsreport.render({
+    return await jsreport.render({
       template: {
         content: fs.readFileSync(path.join(__dirname, 'policyPrint.hbs')).toString(),
         engine: 'handlebars',
-        recipe: 'phantom-pdf',
+        recipe: 'chrome-pdf',
         helpers: helpers,//"var handlerBars = require('handlebars');" +
         // 'function formatDate(_date) {let date = new Date(_date);return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()} ' +
         // 'function generateHtml(clause_text) {let htmlToDisplay = new handlerBars.SafeString(clause_text);return htmlToDisplay;}' +
