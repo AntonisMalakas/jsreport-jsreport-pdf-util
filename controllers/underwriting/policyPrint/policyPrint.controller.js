@@ -28,8 +28,12 @@ jsreport.use(require('jsreport-templates')());
 var helpers = fs.readFileSync(path.join(__dirname, '..', '..', '..', 'helpers/helpers.js'), 'utf8');
 
 exports.policyPrint = async (req, res, next) => {
-  var dataList = fs.readFileSync(path.join(__dirname, 'policyData.json')).toString();
 
+// Used to get data from localJson, and it worked fine for a small amout of data
+// But when the data is being called from and api, with huge amout of data, 
+// it is resulting with the  Error: Navigation Timeout Exceeded: 30000ms exceeded
+
+  //var dataList = fs.readFileSync(path.join(__dirname, 'policyData.json')).toString();
 
     let url = "http://pixel-web:8017/api/Policy/GetPolicyForPrint";
     request(url, { json: true }, (error, response, body) => {
@@ -61,6 +65,8 @@ exports.policyPrint = async (req, res, next) => {
           Clauses: json[2].filter(x => x.POLICY_ID == json[0][i].ID)
         });
       }
+
+      // per request of bjrmatos
       let obj = new Object({
         data: policies_data
       })
