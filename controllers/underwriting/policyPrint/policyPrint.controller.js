@@ -8,8 +8,8 @@ var jsreport = require('jsreport-core')(
   {
     "tasks": {
       "allowedModules": "*",
-      // "strategy": "http-server",
-      "strategy": "in-process",
+      "strategy": "http-server",
+      // "strategy": "in-process",
       "numberOfWorkers": 8
     },
     "scripts": { "allowedModules": "*" },
@@ -30,43 +30,76 @@ var helpers = fs.readFileSync(path.join(__dirname, '..', '..', '..', 'helpers/he
 exports.policyPrint = async (req, res, next) => {
   var dataList = fs.readFileSync(path.join(__dirname, 'policyData.json')).toString();
 
-  jsreport.init().then(async () => {
 
-    await jsreport.documentStore.collection('templates').insert({
-      content: "{{myHelper}}",
-      shortid: 'header',
-      engine: 'handlebars',
-      recipe: 'chrome-pdf',
-      helpers: helpers,
-      chrome: {
-        width: '10cm',
-        height: '10cm'
-      },
+    let url = "http://pixel-web:8017/api/Policy/GetPolicyForPrint";
+    request(url, { json: true }, (error, response, body) => {
+      if (error) { return console.log(error); }
+      var policyPrintList = body;
+      let json = policyPrintList;
 
-    })
+      let policies_data = [];
+
+      for (let i = 0; i < json[0].length; i++) {
+        policies_data.push({
+          LOB_DESC: json[0][i].LOB_DESC,
+          PRODUCT_DESC: json[0][i].PRODUCT_DESC,
+          POLICY_NO: json[0][i].POLICY_NO,
+          END_NO: json[0][i].END_NO,
+          SUM_INSURED: json[0][i].SUM_INSURED,
+          SUM_INSURED_CUR_CODE: json[0][i].SUM_INSURED_CUR_CODE,
+          SUM_INSURED_CUR_DESC: json[0][i].SUM_INSURED_CUR_DESC,
+          DATE_EFFECTIVE: json[0][i].DATE_EFFECTIVE,
+          DATE_EXPIRY: json[0][i].DATE_EXPIRY,
+          TOTAL_PREMIUM: json[0][i].TOTAL_PREMIUM,
+          PREMIUM_CUR_CODE: json[0][i].PREMIUM_CUR_CODE,
+          PREMIUM_CUR_DESC: json[0][i].PREMIUM_CUR_DESC,
+          POLICY_END_AT_NOON: json[0][i].POLICY_END_AT_NOON,
+          PRINT_NAME: json[0][i].PRINT_NAME,
+          TITLE_DESC: json[0][i].TITLE_DESC,
+          PRINT_ADDRESS: json[0][i].PRINT_ADDRESS,
+          Covers: json[1].filter(x => x.POLICY_ID == json[0][i].ID),
+          Clauses: json[2].filter(x => x.POLICY_ID == json[0][i].ID)
+        });
+      }
+      let obj = new Object({
+        data: policies_data
+      })
+
+      jsreport.init().then(async () => {
 
 
-    return await jsreport.render({
-      template: {
-        content: fs.readFileSync(path.join(__dirname, 'policyPrint.hbs')).toString(),
+      await jsreport.documentStore.collection('templates').insert({
+        content: "{{myHelper}}",
+        shortid: 'header',
         engine: 'handlebars',
         recipe: 'chrome-pdf',
-        helpers: helpers,//"var handlerBars = require('handlebars');" +
-        // 'function formatDate(_date) {let date = new Date(_date);return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear()} ' +
-        // 'function generateHtml(clause_text) {let htmlToDisplay = new handlerBars.SafeString(clause_text);return htmlToDisplay;}' +
-        // "function mySum() {console.log('this) return this.$pdf.pages}", // helpers,
-        pdfOperations: [{ type: 'merge', renderForEveryPage: true, templateShortid: 'header' }],
+        helpers: helpers,
+        chrome: {
+          width: '15cm',
+          height: '1cm'
+        },
 
-      },
+      })
 
-      data: dataList
-    }).then(function (resp) {
-      res.contentType('application/pdf');
-      res.send(resp.content);
-    });
-  }).catch(function (e) {
-    console.log(e)
-  })
 
+      return await jsreport.render({
+        template: {
+          content: fs.readFileSync(path.join(__dirname, 'policyPrint.hbs')).toString(),
+          engine: 'handlebars',
+          recipe: 'chrome-pdf',
+          helpers: helpers,
+          pdfOperations: [{ type: 'merge', renderForEveryPage: true, templateShortid: 'header' }],
+
+        },
+
+        data: obj
+      }).then(function (resp) {
+        res.contentType('application/pdf');
+        res.send(resp.content);
+      });
+    }).catch(function (e) {
+      console.log(e)
+    })
+  });
 
 }

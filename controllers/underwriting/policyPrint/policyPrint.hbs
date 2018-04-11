@@ -22,12 +22,13 @@
 
 
 
-{{#each data}} {{{pdfCreatePagesGroup POLICY_NO}}}
+{{#each data}} 
+{{{pdfCreatePagesGroup POLICY_NO}}}
 
 <table class="page_break" width="100%" style="width: 100%; border-collapse: collapse;">
     <tr>
         <td align="center" class="bold" style="text-transform: uppercase; font-size: 1.4em;">
-            {{LOB_DESC}} insurtance policy
+            {{LOB_DESC}} insurance policy
         </td>
     </tr>
     <tr>
@@ -216,5 +217,5 @@
     {{/each}}
 </table>
 
-{{!-- <div style='page-break-before: always'> </div> --}}
-{{/each}}
+{{!--
+<div style='page-break-before: always'> </div> --}} {{/each}}
