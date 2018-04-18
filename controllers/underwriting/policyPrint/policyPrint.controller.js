@@ -33,7 +33,7 @@ exports.policyPrint = async (req, res, next) => {
   // But when the data is being called from and api, with huge amout of data, 
   // it is resulting with the  Error: Navigation Timeout Exceeded: 30000ms exceeded
 
-  //var dataList = fs.readFileSync(path.join(__dirname, 'policyData.json')).toString();
+  var dataList = fs.readFileSync(path.join(__dirname, 'policyData.json')).toString();
 
   let url = "http://pixel-web:8017/api/Policy/GetPolicyForPrint";
   request(url, { json: true }, (error, response, body) => {
@@ -96,7 +96,7 @@ exports.policyPrint = async (req, res, next) => {
 
         },
 
-        data: obj
+        data: dataList
       }).then(function (resp) {
         res.contentType('application/pdf');
         res.send(resp.content);
